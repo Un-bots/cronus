@@ -52,7 +52,7 @@ async def start(_, msg):
 @capture_err
 async def repo(_, message):
     async with httpx.AsyncClient() as client:
-        response = await client.get("https://api.github.com/repos/DAXXTEAM/DAXXMUSIC/contributors")
+        response = await client.get("https://api.github.com/repos/un-bots/shadow/contributors")
     
     if response.status_code == 200:
         users = response.json()
