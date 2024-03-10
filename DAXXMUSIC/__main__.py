@@ -42,7 +42,7 @@ async def init():
     try:
         await DAXX.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("DAXXMUSIC").error(
+        LOGGER("SHADOW").error(
             "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\nSʜᴀᴅᴏᴡ Cʀᴏɴᴜꜱ 𝗦𝗧𝗢𝗣........"
         )
         exit()
