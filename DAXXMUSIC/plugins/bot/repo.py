@@ -34,7 +34,11 @@ async def start(_, msg):
         [
           InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/un_bots"),
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/harsh_un"),
-          ],
+        ],
+        [
+         InlineKeyboardButton("GROUP 2", url="https://t.me/LU639R"),
+
+        ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
