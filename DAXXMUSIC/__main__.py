@@ -40,10 +40,11 @@ async def init():
     await userbot.start()
     await DAXX.start()
     try:
-        await DAXX.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await DAXX.stream_call("https://telegra.ph//file/211e3ebecb6b91e1ef66d.mp4")
     except NoActiveGroupCall:
         LOGGER("SHADOW").error(
-            "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\nSʜᴀᴅᴏᴡ Cʀᴏɴᴜꜱ 𝗦𝗧𝗢𝗣........"
+            "𝗣𝗹𝗭 𝗦𝗧𝗔𝗥𝗧 𝗬𝗢𝗨𝗥 𝗟𝗢𝗚 𝗚𝗥𝗢𝗨𝗣 𝗩𝗢𝗜𝗖𝗘𝗖𝗛𝗔𝗧\𝗖𝗛𝗔𝗡𝗡𝗘𝗟\n\n神 𝗞ɪʀᴀ
+            𝗦𝗧𝗢𝗣........"
         )
         exit()
     except:
@@ -55,8 +56,7 @@ async def init():
     await idle()
     await app.stop()
     await userbot.stop()
-    LOGGER("SANATNI").info("𝗦𝗧𝗢𝗣 𝗦𝗔𝗡𝗔𝗧𝗡𝗜 𝗠𝗨𝗦𝗜𝗖🎻 𝗕𝗢𝗧..")
-
+    LOGGER("KIRA").info("𝗦𝗧𝗢𝗣 神 𝗞ɪʀᴀ🎻 𝗕𝗢𝗧..")
 
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
