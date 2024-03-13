@@ -28,13 +28,13 @@ from strings import get_string
 
 #--------------------------
 
-NEXI_VID = [
-"https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4",
+NEXI_VID = [  
+"https://telegra.ph//file/211e3ebecb6b91e1ef66d.mp4",
 "https://graph.org/file/412992cc6183fa30558a7.mp4",
 "https://graph.org/file/83ebf52e8bbf138620de7.mp4",
-"https://graph.org/file/82fd67aa56eb1b299e08d.mp4",
+"https://telegra.ph//file/39235c313df63d71fc907.mp4",
 "https://graph.org/file/db3e0d203162c4de45ec7.mp4",
-"https://graph.org/file/7c1aa59649fbf3ab422da.mp4",
+"https://telegra.ph//file/607e8915e99528eed33ac.mp4",
 "https://graph.org/file/2a7f857f31b32766ac6fc.mp4",
 
 ]
