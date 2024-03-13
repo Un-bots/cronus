@@ -1,12 +1,12 @@
 {
-    "name": "Shadow",
+    "name": "kira",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://te.legra.ph//file/f550b02e5b2c4b4dd8a5a.jpg",
     "keywords": [
     "python3",
     "telegram",
     "bot",
-    "DAXX",
+    "HARSH",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
