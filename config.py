@@ -16,9 +16,9 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","harsh_un")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "cronus_probot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "kira_probot")
 # --------------------------------------------------------
-BOT_NAME = getenv("BOT_NAME" , "SHADOW CRONUS")
+BOT_NAME = getenv("BOT_NAME" , "神 𝗞ɪʀᴀ")
 # ---------------------------------------------------------
 ASSUSERNAME = getenv("ASSUSERNAME" , "UNB")
 # ---------------------------------------------------------
@@ -35,7 +35,7 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002141030282"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002040932096"))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 OWNER_ID = int(getenv("OWNER_ID", "6253265083"))
@@ -53,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/un-bots/shadow",
+    "https://github.com/un-bots/cronus",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Master")
 GIT_TOKEN = getenv(
@@ -147,7 +147,7 @@ PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph//file/10db5a8c47ac46101a1da.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph//file/926b217be672f4e56369d.jpg"
+STATS_IMG_URL = "https://telegra.ph//file/ab50f5964ca3cb0ef3abf.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/48f39202823b358203234.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
