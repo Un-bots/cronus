@@ -11,35 +11,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="SDWAss1",
+            name="UNAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="SDWAss2",
+            name="UNAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="SDWAss3",
+            name="UNAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="SDWAss4",
+            name="UNAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="SDWAss5",
+            name="UNAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -51,7 +51,7 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("SHADOW_CRONUS")
+                await self.one.join_chat("UNB_INFO")
                 await self.one.join_chat("UN_W0RLD")
             except:
                 pass
@@ -72,7 +72,7 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("SHADOW_CRONUS")
+                await self.two.join_chat("UNB_INFO")
                 await self.one.join_chat("UN_W0RLD")
             except:
                 pass
@@ -93,7 +93,7 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("SHADOW_CRONUS")
+                await self.three.join_chat("UNB_INFO")
                 await self.one.join_chat("UN_W0RLD")
             except:
                 pass
@@ -114,7 +114,7 @@ class Userbot(Client):
         if config.STRING4:
             await self.four.start()
             try:
-                await self.four.join_chat("SHADOW_CRONUS")
+                await self.four.join_chat("UNB_INFO")
                 await self.one.join_chat("UN_W0RLD")
             except:
                 pass
@@ -135,7 +135,7 @@ class Userbot(Client):
         if config.STRING5:
             await self.five.start()
             try:
-                await self.five.join_chat("SHADOW_CRONUS")
+                await self.five.join_chat("UNB_INFO")
                 await self.one.join_chat("UN_W0RLD")
             except:
                 pass
