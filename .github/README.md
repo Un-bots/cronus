@@ -27,7 +27,7 @@ GO TO [RELOAD.PY](https://github.com/DAXXTEAM/DAXXMUSIC/blob/Master/DAXXMUSIC/pl
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
 
-<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/un-bots/cronus"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-yellow?style=for-the-badge&logo=heroku" width="160" height="50"/></a></p>
+<p align="center"><a href="https://dashboard.heroku.com/new?template=https://github.com/un-bots/cronus"> <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-lime?style=for-the-badge&logo=heroku" width="160" height="50"/></a></p>
 
 <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=un-bots &show_icons=true&locale=en&layout=compact" alt="un-bots" /></p>
 
