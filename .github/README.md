@@ -31,6 +31,9 @@ GO TO [RELOAD.PY](https://github.com/DAXXTEAM/DAXXMUSIC/blob/Master/DAXXMUSIC/pl
 
 <p align="center"><a href="https://Railway.app/dashboard/new?template=https://github.com/un-bots/cronus"> <img src="https://img.shields.io/badge/Deploy%20On%20Railway-silver?style=for-the-badge&logo=railway" width="190" height="50"/></a></p>
 
+<p align="center"><a
+href="https://dashboard.Replit.com/new?template=https://github.com/un-bots/cronus"> <img src="https://img.shields.io/badge/Deploy%20On%20Replit-silver?style=for-the-badge&logo=replit" width="190" height="50"/></a></p>
+
 <p><img width="500" align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=un-bots &show_icons=true&locale=en&layout=compact" alt="un-bots" /></p>
 
 [![Contributors](https://contrib.rocks/image?repo=un-bots/cronus)](https://github.com/un-bots/cronus/graphs/contributors)
