@@ -26,7 +26,7 @@ async def start(_, msg):
           InlineKeyboardButton("𝗔𝗗𝗗 𝗠𝗘", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
         ],
         [
-          InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/un_bots"),
+          InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/un_w0rld"),
           InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/LU6I3R"),
         ],
         [
