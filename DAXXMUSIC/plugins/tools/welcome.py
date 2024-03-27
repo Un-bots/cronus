@@ -198,10 +198,10 @@ async def greet_new_member(_, member: ChatMemberUpdated):
 **▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 
 ╭────── · · ୨୧ · · ──────╮
-**   Hey There,** {user.mention} ! 
-**   Welcome to** {chat.chatname}  
-**   ID »** `{user.id}`
-**   Username »** @{user.username}
+**Hey There,** {user.mention} 
+**Welcome to** {chat.chatname}  
+**ID »** `{user.id}`
+**Username »** @{user.username}
 ╰────── · · ୨୧ · · ──────╯
 **▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 """,
