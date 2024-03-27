@@ -10,12 +10,13 @@ from pyrogram.enums import *
 #BOT FILE NAME
 from DAXXMUSIC import app as app
 from DAXXMUSIC.mongo.couples_db import _get_image, get_couple
+from config import BOT_USERNAME
 
 POLICE = [
     [
         InlineKeyboardButton(
             text="𓊈✨ᴀᴅᴅ ᴍᴇ✨𓊉",
-            url=f"https://t.me/kira_probot?startgroup=true",
+            url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
         ),
     ],
 ]
