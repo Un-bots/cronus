@@ -7,19 +7,13 @@ import httpx
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 start_txt = """**
-✪ ωεℓ¢σмє ƒσя яєρσ ✪
+⚠️Sᴏʀʀʏ, ʙᴜᴛ ᴛʜᴇ 神 𝗞ɪʀᴀ's ʀᴇᴘᴏ ɪs ɴᴏᴛ ᴘᴜʙʟɪᴄ. 
+
+✰ Iғ ʏᴏᴜ ᴡᴀɴᴛ ʀᴇᴘᴏ ᴛʜᴇɴ ᴀsᴋ ᴅᴇᴠ
  
- ➲ ᴀʟʟ ʀᴇᴘᴏ ᴇᴀsɪʟʏ ᴅᴇᴘʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ᴀɴʏ ᴇʀʀᴏʀ ✰
- 
- ➲ ɴᴏ ʜᴇʀᴏᴋᴜ ʙᴀɴ ɪssᴜᴇ ✰
- 
- ➲ ɴᴏ ɪᴅ ʙᴀɴ ɪssᴜᴇ ✰
- 
- ➲ᴜɴʟɪᴍɪᴛᴇᴅ ᴅʏɴᴏs ✰
- 
- ➲ ʀᴜɴ 24x7 ʟᴀɢ ғʀᴇᴇ ᴡɪᴛʜᴏᴜᴛ sᴛᴏᴘ ✰
- 
- ► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ss
+► ɪғ ʏᴏᴜ ғᴀᴄᴇ ᴀɴʏ ᴘʀᴏʙʟᴇᴍ ᴛʜᴇɴ sᴇɴᴅ ss
+
+✰ Tʜᴀɴᴋ ʏᴏᴜ🧡
 **"""
 
 
@@ -33,17 +27,17 @@ async def start(_, msg):
         ],
         [
           InlineKeyboardButton("𝗛𝗘𝗟𝗣", url="https://t.me/un_bots"),
-          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/harsh_un"),
+          InlineKeyboardButton("𝗢𝗪𝗡𝗘𝗥", url="https://t.me/LU6I3R"),
         ],
         [
-         InlineKeyboardButton("GROUP 2", url="https://t.me/LU639R"),
+         InlineKeyboardButton("𝗖𝗛𝗔𝗧 𝗚𝗥𝗢𝗨𝗣", url="https://t.me/+qzwE0S3s6ps5YzVl"),
 
         ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await msg.reply_photo(
-        photo="https://telegra.ph//file/da9d126bc5a24291d2870.jpg",
+        photo="https://telegra.ph/file/2945b87231919e729afb9.jpg",
         caption=start_txt,
         reply_markup=reply_markup
     )
