@@ -197,12 +197,12 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 caption=f"""
 **▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 
-**╭────── · · ୨୧ · · ──────╮
-   **Hey There,** {user.mention} ! 
-   **Welcome to** {chat.chatname}  
-   **ID »** `{user.id}`
-   **Username »** @{user.username}
-**╰────── · · ୨୧ · · ──────╯
+╭────── · · ୨୧ · · ──────╮
+**   Hey There,** {user.mention} ! 
+**   Welcome to** {chat.chatname}  
+**   ID »** `{user.id}`
+**   Username »** @{user.username}
+╰────── · · ୨୧ · · ──────╯
 **▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 """,
                 reply_markup=InlineKeyboardMarkup([
