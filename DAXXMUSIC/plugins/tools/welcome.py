@@ -187,24 +187,23 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             welcomeimg = welcomepic(
                 pic, user.first_name, member.chat.title, user.id, user.username
             )
-            button_text = "๏ ᴠɪᴇᴡ ɴᴇᴡ ᴍᴇᴍʙᴇʀ ๏"
-            add_button_text = "๏ ᴋɪᴅɴᴀᴘ ᴍᴇ ๏"
+            button_text = "👀 ᴜsᴇʀ 👀"
+            add_button_text = " ✨ ᴀᴅᴅ ᴍᴇ ✨"
             deep_link = f"tg://openmessage?user_id={user.id}"
             add_link = f"https://t.me/{app.username}?startgroup=true"
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
                 caption=f"""
-**❅────✦ ᴡᴇʟᴄᴏᴍᴇ ✦────❅**
+**▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 
-▰▰▰▰▰▰▰▰▰▰▰▰▰
-**➻ ɴᴀᴍᴇ »** {user.mention}
-**➻ ɪᴅ »** `{user.id}`
-**➻ ᴜ_ɴᴀᴍᴇ »** @{user.username}
-**➻ ᴛᴏᴛᴀʟ ᴍᴇᴍʙᴇʀs »** {count}
-▰▰▰▰▰▰▰▰▰▰▰▰▰
-
-**❅─────✧❅✦❅✧─────❅**
+**╭────── · · ୨୧ · · ──────╮
+   **Hey There,** {user.mention} ! 
+   **Welcome to** {chat.chatname}  
+   **ID »** `{user.id}`
+   **Username »** @{user.username}
+**╰────── · · ୨୧ · · ──────╯
+**▰▰▰▰▰▰▰▰▰▰▰▰▰▰**
 """,
                 reply_markup=InlineKeyboardMarkup([
                     [InlineKeyboardButton(button_text, url=deep_link)],
