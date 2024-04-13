@@ -1,10 +1,12 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler
 import logging
 from config import OWNER_ID, BOT_TOKEN
+from DAXXMUSIC import LOGGER
+from pyrogram import filters
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-logger = logging.getLogger(name)
+logger = "LOGGER"
 
 # Telegram Bot Token (Replace 'YOUR_BOT_TOKEN' with your actual bot token)
 TOKEN = "BOT_TOKEN"
