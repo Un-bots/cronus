@@ -12,7 +12,7 @@ logger = "LOGGER"
 TOKEN = "BOT_TOKEN"
 
 # Create an Updater object
-updater = Updater(bot_token=TOKEN, use_context=True)
+updater = Updater(TOKEN=BOT_TOKEN, use_context=True)
 dispatcher = updater.dispatcher
 
 # Command handler for promoting the bot owner in groups
