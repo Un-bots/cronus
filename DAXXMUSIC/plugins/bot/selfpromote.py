@@ -1,6 +1,6 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler
 import logging
-from config import OWNER_ID, BOT_TOKEN
+from config import OWNER_ID
 from DAXXMUSIC import LOGGER
 from pyrogram import filters
 
