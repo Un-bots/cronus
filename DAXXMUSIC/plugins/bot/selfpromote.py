@@ -9,10 +9,10 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 logger = "LOGGER"
 
 # Telegram Bot Token (Replace 'YOUR_BOT_TOKEN' with your actual bot token)
-TOKEN = "BOT_TOKEN"
+
 
 # Create an Updater object
-updater = Updater(TOKEN=BOT_TOKEN, use_context=True)
+updater = Updater(use_context=True)
 dispatcher = updater.dispatcher
 
 # Command handler for promoting the bot owner in groups
