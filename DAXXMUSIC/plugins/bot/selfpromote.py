@@ -12,7 +12,6 @@ logger = "LOGGER"
 
 
 # Create an Updater object
-updater = Updater(use_context=True)
 dispatcher = updater.dispatcher
 
 # Command handler for promoting the bot owner in groups
