@@ -1,12 +1,13 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 import logging
+from config import OWNER_ID, BOT_TOKEN
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(name)
 
 # Telegram Bot Token (Replace 'YOUR_BOT_TOKEN' with your actual bot token)
-TOKEN = 'YOUR_BOT_TOKEN'
+TOKEN = "BOT_TOKEN"
 
 # Create an Updater object
 updater = Updater(token=TOKEN, use_context=True)
@@ -18,7 +19,7 @@ def promote_owner(update, context):
     chat_id = update.message.chat_id
 
     # Check if the bot owner triggered the command
-    if user_id == YOUR_BOT_OWNER_ID:
+    if user_id == "OWNER_ID":
         # Check if the bot is currently in a group
         if update.message.chat.type == 'group':
             context.bot.promote_chat_member(chat_id, user_id, can_change_info=True, can_delete_messages=True, can_restrict_members=True, can_invite_users=True, can_pin_messages=True)
