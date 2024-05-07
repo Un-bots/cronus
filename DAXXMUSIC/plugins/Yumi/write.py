@@ -16,7 +16,7 @@ async def handwrite(_, message: Message):
     write = requests.get(f"https://apis.xditya.me/write?text={text}").url
 
     caption = f"""
-sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ᴛᴇxᴛ 💘
+sᴜᴄᴇssғᴜʟʟʏ ᴡʀɪᴛᴛᴇɴ ɪɴ ᴅᴇᴀᴛʜ ɴᴏᴛᴇ ☠️
 ✨ ᴡʀɪᴛᴛᴇɴ ʙʏ : [神 𝗞ɪʀᴀ](https://t.me/{BOT_USERNAME})
 🥀 ʀᴇǫᴜᴇsᴛᴇᴅ ʙʏ : {message.from_user.mention}
 """
