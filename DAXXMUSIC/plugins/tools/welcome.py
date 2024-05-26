@@ -93,7 +93,7 @@ class temp:
 
 
 
-def circle(pfp, size=(500, 500), brightness_factor=10):
+def circle(pfp, size=(200, 200), brightness_factor=10):
     pfp = pfp.resize(size, Image.ANTIALIAS).convert("RGBA")
     pfp = ImageEnhance.Brightness(pfp).enhance(brightness_factor)
     bigsize = (pfp.size[0] * 3, pfp.size[1] * 3)
@@ -109,7 +109,7 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
     background = Image.open("DAXXMUSIC/assets/wel2.png")
     pfp = Image.open(pic).convert("RGBA")
     pfp = circle(pfp, brightness_factor=brightness_factor) 
-    pfp = pfp.resize((575, 575))
+    pfp = pfp.resize((275, 275))
     draw = ImageDraw.Draw(background)
     font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=70)
     welcome_font = ImageFont.truetype('DAXXMUSIC/assets/font.ttf', size=61)
@@ -121,7 +121,7 @@ def welcomepic(pic, user, chatname, id, uname, brightness_factor=1.3):
   #  draw.text((630, 230), f"USERNAME : {uname}", fill=(255, 255, 255), font=font)
 
     #
-    pfp_position = (48, 88)
+    pfp_position = (28, 68)
     background.paste(pfp, pfp_position, pfp)
     background.save(f"downloads/welcome#{id}.png")
     return f"downloads/welcome#{id}.png"
