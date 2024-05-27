@@ -3,7 +3,7 @@ bard
 SpeechRecognition
 pornhub-api==0.2.0
 aiohttp 
-asyncio 
+asyncio==3.4.3
 beautifulsoup4
 daxxhub
 deepai
@@ -31,13 +31,13 @@ py-tgcalls==0.9.7
 pykeyboard
 pyshorteners
 pyrogram==2.0.106
-python-dotenv
+python-dotenv==1.0.0
 pyyaml==6.0.1
-requests
+requests==2.31.0
 emojis
 speedtest-cli
 spotipy
-tgcrypto
+tgcrypto==1.2.5
 telegraph
 unidecode
 yt-dlp
