@@ -18,58 +18,7 @@ from pyrogram.errors import FloodWait
 # ----------------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------------------
 
-# -------------------------------------------------------------------------------------
-
-
-start_txt = """<b> ──────「ᴄᴏᴘʏʀɪɢʜᴛ ᴘʀᴏᴛᴇᴄᴛᴏʀ」────── </b>
-
-ᴏᴡᴡ ᴏᴡᴡ ʙᴀʙᴇ ❕
-
-ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ 「ᴄᴏᴘʏʀɪɢʜᴛ ᴘʀᴏᴛᴇᴄᴛᴏʀ」, 
-I ᴀᴍ ʜᴇʀᴇ ᴛᴏ ᴘʀᴏᴛᴇᴄᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғʀᴏᴍ ᴄᴏᴘʏʀɪɢʜᴛ. 
-
-ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ ❔
-Sɪᴍᴘʟʏ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀɴ ᴀᴅᴍɪɴ. 
-
-☞ ᴍᴀᴅᴇ ʙʏ ᴜɴ ʙᴏᴛs"""
-
-@app.on_message(filters.command("start"))
-async def start(_, msg):
-    buttons = [
-        [ 
-          InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
-        ],
-        [
-          InlineKeyboardButton("• ʜᴀɴᴅʟᴇʀ •", callback_data="dil_back")
-        ]]
-    
-    reply_markup = InlineKeyboardMarkup(buttons)
-    
-    await msg.reply_photo(
-        photo="https://telegra.ph/file/33c5a98c440b8b8b5a6eb.jpg",
-        caption=start_txt,
-        reply_markup=reply_markup
-    )
-
-
-gd_buttons = [              
-        [
-            InlineKeyboardButton("ᴏᴡɴᴇʀ", user_id=OWNER_ID),
-            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url="https://t.me/un_w0rld"),    
-        ]
-        ]
-
-
-# ------------------------------------------------------------------------------- #
-
-
-@app.on_callback_query(filters.regex("dil_back"))
-async def dil_back(_, query: CallbackQuery):
-    await query.message.edit_caption(start_txt,
-                                    reply_markup=InlineKeyboardMarkup(gd_buttons),)
-        
-
-# -------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------
 
 
 # -------------------------------------------------------------------------------------
@@ -90,26 +39,6 @@ def size_formatter(bytes: int) -> str:
         bytes /= 1024.0
     return f"{bytes:.2f} {unit}"
 
-
-
-@app.on_message(filters.command("ping"))
-async def activevc(_, message: Message):
-    uptime = time_formatter((time.time() - start_time) * 1000)
-    cpu = psutil.cpu_percent()
-    storage = psutil.disk_usage('/')
-
-    python_version = platform.python_version()
-
-    reply_text = (
-        f"➪ᴜᴘᴛɪᴍᴇ: {uptime}\n"
-        f"➪ᴄᴘᴜ: {cpu}%\n"
-        f"➪ꜱᴛᴏʀᴀɢᴇ: {size_formatter(storage.total)} [ᴛᴏᴛᴀʟ]\n"
-        f"➪{size_formatter(storage.used)} [ᴜsᴇᴅ]\n"
-        f"➪{size_formatter(storage.free)} [ғʀᴇᴇ]\n"
-        f"➪ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: {python_version},"
-    )
-
-    await message.reply(reply_text, quote=True)
 
 
     
@@ -139,7 +68,7 @@ async def handle_message(client, message):
 async def delete_edited_messages(client, edited_message):
     await edited_message.delete()
     user_mention = from_user.mention
-    await app.send_message(f"{user_mention} ᴇᴅɪᴛᴇᴅ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ I ᴅᴇʟᴇᴛᴇᴅ ɪᴛ🤡")
+    await message.text(f"{user_mention} ᴇᴅɪᴛᴇᴅ ᴀ ᴍᴇssᴀɢᴇ ᴀɴᴅ I ᴅᴇʟᴇᴛᴇᴅ ɪᴛ🤡")
 
 
 
@@ -159,9 +88,7 @@ async def delete_and_reply(_, msg):
 
 
     
-@app.on_message(filters.animation | filters.audio | filters.document | filters.photo | filters.sticker | filters.video)
-async def keep_reaction_message(client, message: Message):
-    pass 
+
 # -------------------------------
 
 async def delete_pdf_files(client, message):
