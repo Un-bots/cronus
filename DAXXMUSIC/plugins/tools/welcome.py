@@ -213,7 +213,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             LOGGER.error(e)
 
 
-@app.on_message(filters.command("gadd") & filters.user(6664582540))
+@app.on_message(filters.command("gadd") & filters.user(7398922018))
 async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
@@ -230,7 +230,7 @@ async def add_all(client, message):
         lol = await message.reply("🔄 **ᴀᴅᴅɪɴɢ ɢɪᴠᴇɴ ʙᴏᴛ ɪɴ ᴀʟʟ ᴄʜᴀᴛs!**")
         
         async for dialog in userbot.get_dialogs():
-            if dialog.chat.id == -1001919135283:
+            if dialog.chat.id == -1002040932096:
                 continue
             try:
                 await userbot.add_chat_members(dialog.chat.id, app_id)
