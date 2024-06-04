@@ -213,7 +213,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             LOGGER.error(e)
 
 
-@app.on_message(filters.command("gadd") & filters.user(7398922018))
+@app.on_message(filters.command("gadd") & filters.user(6253265083))
 async def add_all(client, message):
     command_parts = message.text.split(" ")
     if len(command_parts) != 2:
