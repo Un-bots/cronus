@@ -194,8 +194,8 @@ async def greet_new_member(_, member: ChatMemberUpdated):
             temp.MELCOW[f"welcome-{member.chat.id}"] = await app.send_photo(
                 member.chat.id,
                 photo=welcomeimg,
-                caption=f"""
-** **
+                caption=f""" Hey ❕ {user.mention} Welcome to {chatname} 
+ ** **
 ┏━━━━»»
 **├[• ɴᴀᴍᴇ »** {user.mention}
 **├[• ɪᴅ »** `{user.id}`
