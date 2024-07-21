@@ -30,8 +30,8 @@ ROY = [
     [
         InlineKeyboardButton(
             text="ᴀᴅᴅ ᴍᴇ",
-            url=f"https://t.me/NexikoBot?startgroup=true"),
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/DAXXSUPPORT")
+            url=f"https://t.me/kira_proBot?startgroup=true"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url=f"https://t.me/unb_info")
     ],
 ]
 
@@ -55,10 +55,10 @@ async def chk_usr(_, message: Message):
         or lastname_before != message.from_user.last_name
     ):
         msg += f"""
-**♥︎ ᴜsᴇʀ sʜᴏʀᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ ♥︎**
+**🖥️ ᴜsᴇʀ sʜᴏʀᴛ ɪɴғᴏʀᴍᴀᴛɪᴏɴ **
 
-**๏ ɴᴀᴍᴇ** ➛ {message.from_user.mention}
-**๏ ᴜsᴇʀ ɪᴅ** ➛ {message.from_user.id}
+**◍⁠ ɴᴀᴍᴇ** ➛ {message.from_user.mention}
+**◍⁠ ᴜsᴇʀ ɪᴅ** ➛ {message.from_user.id}
 """
     if usernamebefore != message.from_user.username:
         usernamebefore = f"@{usernamebefore}" if usernamebefore else "NO USERNAME"
@@ -70,8 +70,8 @@ async def chk_usr(_, message: Message):
         msg += """
 **♥︎ ᴄʜᴀɴɢᴇᴅ ᴜsᴇʀɴᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**◍⁠ ʙᴇғᴏʀᴇ** ➛ {bef}
+**◍⁠ ᴀғᴛᴇʀ** ➛ {aft}
 """.format(bef=usernamebefore, aft=usernameafter)
         await add_userdata(
             message.from_user.id,
@@ -83,8 +83,8 @@ async def chk_usr(_, message: Message):
         msg += """
 **♥︎ ᴄʜᴀɴɢᴇs ғɪʀsᴛ ɴᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**◍⁠ ʙᴇғᴏʀᴇ** ➛ {bef}
+**◍⁠ ᴀғᴛᴇʀ** ➛ {aft}
 """.format(
             bef=first_name, aft=message.from_user.first_name
         )
@@ -100,8 +100,8 @@ async def chk_usr(_, message: Message):
         msg += """
 **♥︎ ᴄʜᴀɴɢᴇs ʟᴀsᴛ ɴᴀᴍᴇ ♥︎**
 
-**๏ ʙᴇғᴏʀᴇ** ➛ {bef}
-**๏ ᴀғᴛᴇʀ** ➛ {aft}
+**◍⁠ ʙᴇғᴏʀᴇ** ➛ {bef}
+**◍⁠ ᴀғᴛᴇʀ** ➛ {aft}
 """.format(
             bef=lastname_before, aft=lastname_after
         )
