@@ -38,7 +38,7 @@ async def bugs(_, msg: Message):
     
 
     bug_report = f"""
-#ʙᴜɢ : [Harsh](tg://user?id={owner_id})
+#ʙᴜɢ : [ʀᴇᴘᴏʀᴛ](tg://user?id={owner_id})
 
 ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :  {mention}
 ᴜsᴇʀ ɪᴅ : {user_id}
