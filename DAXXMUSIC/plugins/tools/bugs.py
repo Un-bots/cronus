@@ -38,15 +38,15 @@ async def bugs(_, msg: Message):
     
 
     bug_report = f"""
-**#ʙᴜɢ : ** **tg://user?id={owner_id}**
+#ʙᴜɢ : [Harsh](tg://user?id={owner_id})
 
-**ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ : ** **{mention}**
-**ᴜsᴇʀ ɪᴅ : ** **{user_id}**
-**ᴄʜᴀᴛ : ** **{chat_username}**
+ʀᴇᴩᴏʀᴛᴇᴅ ʙʏ :  {mention}
+ᴜsᴇʀ ɪᴅ : {user_id}
+ᴄʜᴀᴛ : {chat_username}
 
-**ʙᴜɢ : ** **{bugs}**
+ʙᴜɢ : {bugs}
 
-**ᴇᴠᴇɴᴛ sᴛᴀᴍᴩ : ** **{datetimes}**"""
+ᴇᴠᴇɴᴛ sᴛᴀᴍᴩ : {datetimes}"""
 
     if msg.chat.type == "private":
         await msg.reply_text("<b>» ᴛʜɪs ᴄᴏᴍᴍᴀɴᴅ ɪs ᴏɴʟʏ ғᴏʀ ɢʀᴏᴜᴩs.</b>")
