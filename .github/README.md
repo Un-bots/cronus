@@ -26,6 +26,8 @@ GO TO [RELOAD.PY](https://github.com/DAXXTEAM/DAXXMUSIC/blob/Master/DAXXMUSIC/pl
 <b>𝗗𝗘𝗣𝗟𝗢𝗬𝗠𝗘𝗡𝗧 𝗠𝗘𝗧𝗛𝗢𝗗𝗦</b>
 </p>
 
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=git&repository=github.com/un-bots/cronus&branch=main&name=kiraprobot)
+
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
 </h3>
