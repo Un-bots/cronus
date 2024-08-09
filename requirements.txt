@@ -2,7 +2,9 @@ aiofiles
 bard
 SpeechRecognition
 pornhub-api==0.2.0
-aiohttp 
+flask==2.2.2
+gunicorn==20.1.0
+aiohttp==3.8.1
 asyncio
 beautifulsoup4
 daxxhub
