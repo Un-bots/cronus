@@ -9,10 +9,10 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID" "26516344"))
+API_HASH = getenv("API_HASH" "7a3f7d55d89476a15a62b4dd39062556")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN" "6780091053:AAHnkEISSXHbZ7869xnqA3Il70YTBQ7wLPw")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","harsh_un")
 # --------------------------------------------------------
@@ -26,7 +26,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "UNB")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://shuyaashivu:9fcc60263a946ef550d11406667404fa@cluster0.ikub9lo.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -114,7 +114,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQEJrN8AUWHcU1yvnhb2K-aZKXi6QUFY_JE4vLQb_tDth3Qxtq03I0Ds8l-6_PhPknQSmzdNsKMpNvqvtGFmYtiaMRzRU0651yFZxjlpjRCUY4ZA5icOjfpEXSe7NDAIBYq8CnPnRgRFEwtHjVROgtjCqCFsyjibze5tpieNkhSLeI3jefI7IrGC49TM8gAMzd1GWQqEmkPOs_sl0n-s1K14pYuiLrqAsuRolDiPPm7-OxLogtf-uhwcZIvqUzryOMdVL4g8pVg_mKpwf9a7pUHG1iXxB53P6UXXe-Sk5guaKTi77WELH_nu0bAxxSXVpkn5vtHZMb7KIXRTYIs82vyOfn_lRwAAAAGYBb4NAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
