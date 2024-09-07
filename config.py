@@ -9,14 +9,16 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID" "26516344"))
-API_HASH = getenv("API_HASH" "7a3f7d55d89476a15a62b4dd39062556")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
+
+EVAL = list(map(int, getenv("EVAL", "7427691214 7045191057").split()))
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN" "7348508919:AAGkZ_K5OUcBuitUQoCV2ZsuJrDArVX8Oas")
+BOT_TOKEN = getenv("BOT_TOKEN")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","harsh_un")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME" , "kira_probot")
+BOT_USERNAME = getenv("BOT_USERNAME" , "KIRA_PROBOT")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME" , "神 𝗞ɪʀᴀ")
 # ---------------------------------------------------------
@@ -26,7 +28,7 @@ ASSUSERNAME = getenv("ASSUSERNAME" , "UNB")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://HaremDBBot:ThisIsPasswordForHaremDB@haremdb.swzjngj.mongodb.net/?retryWrites=true&w=majority")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -35,10 +37,10 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 # ----------------------------------------------------------------
 
 # ----------------------------------------------------------------
-LOGGER_ID = int(getenv("LOGGER_ID", "-1002040932096"))
+LOGGER_ID = int(getenv("LOGGER_ID", -1002040932096))
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
-OWNER_ID = int(getenv("OWNER_ID", "6253265083"))
+OWNER_ID = int(getenv("OWNER_ID", 6253265083))
 # -----------------------------------------------------------------
 # -----------------------------------------------------------------
 
@@ -68,7 +70,7 @@ GIT_TOKEN = getenv(
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/unb_info")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/UNB_SUPPORT")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/unb_support")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
@@ -114,7 +116,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", "BQG3QR8AUTzWuqe3gfgk0HlYfD16yZpGzK_OrSg1-j_Ki4P_wDHtgFSAR5d4YItMCUuHLrhg3x69WZWttjcq7ru6n8CwF_xU7yPUk8VInqVaIcrN8nsjUw6DQgLsgNzGXoTk1lkvGZXF3M6-M_6WTFAakDhCIRmBjHjfG_DNJvG4leqRbdvfjF1kz1nZNl-tA50bqZ05uTNvt428fYhKyuFRddycXuaj0WYvlARoiDR50SqdU2gg3e9v30Nzi0mDXXVpw_aaetXR50UGHKcUMNFL0x59ipi6A3J8HN2s8TMijcQhAcfwcL9MLTH0ItrH2QJkbx4R44RQBSgtg-E2QeAaGBPTtwAAAAGnDuOMAA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
@@ -146,8 +148,8 @@ START_IMG_URL = getenv(
 PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://telegra.ph/file/0fb5799f17005b83a8d14.jpg"
 )
-PLAYLIST_IMG_URL = "https://telegra.ph/file/d723f4c80da157fca1678.jpg"
-STATS_IMG_URL = "https://telegra.ph//file/ab50f5964ca3cb0ef3abf.jpg"
+PLAYLIST_IMG_URL = "https://telegra.ph/file/0fb5799f17005b83a8d14.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/0fb5799f17005b83a8d14.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/48f39202823b358203234.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/e575ae40d6635250974e1.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
