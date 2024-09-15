@@ -7,13 +7,13 @@ from pyrogram.types import InputMediaPhoto
 async def ul(_, message):
     reply = message.reply_to_message
     if reply and reply.media:
-        i = await message.reply("𝐌𝙰𝙺𝙴 𝐀 𝐋𝙸𝙽𝙺...")
+        i = await message.reply("⏳")
         path = await reply.download()  # Download media file
         try:
             # Upload the file to Telegraph
             result = upload_file(path)
             url = "https://telegra.ph" + result[0]
-            await i.edit(f'Yᴏᴜʀ ʟɪɴᴋ sᴜᴄᴄᴇssғᴜʟɟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ: {url}')
+            await i.edit(f'ᴜʀ ʟɪɴᴋ: {url}')
         except Exception as e:
             await i.edit(f"Error: {e}")
 
@@ -23,13 +23,13 @@ async def ul(_, message):
 async def ul(_, message):
     reply = message.reply_to_message
     if reply and reply.media:
-        i = await message.reply("𝐌𝙰𝙺𝙴 𝐀 𝐋𝙸𝙽𝙺...")
+        i = await message.reply("⏳")
         path = await reply.download()  # Download media file
         try:
             # Upload the file to Graph.org
             result = upload_file(path)
             url = "https://graph.org" + result[0]
-            await i.edit(f'Yᴏᴜʀ ʟɪɴᴋ sᴜᴄᴄᴇssғᴜʟɟʏ ɢᴇɪɴᴇʀᴀᴛᴇᴅ: {url}')
+            await i.edit(f'ᴜʀ ʟɪɴᴋ: {url}')
         except Exception as e:
             await i.edit(f"Error: {e}")
 
