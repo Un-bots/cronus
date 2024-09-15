@@ -3,29 +3,33 @@ from pyrogram import filters
 from DAXXMUSIC import app
 from pyrogram.types import InputMediaPhoto
 
-
-@app.on_message(filters.command(["tgm" , "telegraph"]))
-def ul(_, message):
+@app.on_message(filters.command(["tgm", "telegraph"]))
+async def ul(_, message):
     reply = message.reply_to_message
-    if reply.media:
-        i = message.reply("⏳")
-        path = reply.download()
-        fk = upload_file(path)
-        for x in fk:
-            url = "https://telegra.ph" + x
+    if reply and reply.media:
+        i = await message.reply("𝐌𝙰𝙺𝙴 𝐀 𝐋𝙸𝙽𝙺...")
+        path = await reply.download()  # Download media file
+        try:
+            # Upload the file to Telegraph
+            result = upload_file(path)
+            url = "https://telegra.ph" + result[0]
+            await i.edit(f'Yᴏᴜʀ ʟɪɴᴋ sᴜᴄᴄᴇssғᴜʟɟʏ ɢᴇɴᴇʀᴀᴛᴇᴅ: {url}')
+        except Exception as e:
+            await i.edit(f"Error: {e}")
 
-        i.edit(f'ᴜʀ ʟɪɴᴋ {url}')
+###
 
-########____________________________________________________________######
-
-@app.on_message(filters.command(["graph" , "grf"]))
-def ul(_, message):
+@app.on_message(filters.command(["graph", "grf"]))
+async def ul(_, message):
     reply = message.reply_to_message
-    if reply.media:
-        i = message.reply("⏳")
-        path = reply.download()
-        fk = upload_file(path)
-        for x in fk:
-            url = "https://graph.org" + x
+    if reply and reply.media:
+        i = await message.reply("𝐌𝙰𝙺𝙴 𝐀 𝐋𝙸𝙽𝙺...")
+        path = await reply.download()  # Download media file
+        try:
+            # Upload the file to Graph.org
+            result = upload_file(path)
+            url = "https://graph.org" + result[0]
+            await i.edit(f'Yᴏᴜʀ ʟɪɴᴋ sᴜᴄᴄᴇssғᴜʟɟʏ ɢᴇɪɴᴇʀᴀᴛᴇᴅ: {url}')
+        except Exception as e:
+            await i.edit(f"Error: {e}")
 
-        i.edit(f'ᴜʀ ʟɪɴᴋ {url}')
