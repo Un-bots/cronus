@@ -1,17 +1,17 @@
 import time
 import aiohttp
 from DAXXMUSIC import app
-from config import BOT_USERNAME
-
 from pyrogram.enums import ChatAction, ParseMode
 from pyrogram import filters
 
+# Command handler for ChatGPT
 @app.on_message(filters.command(["chatgpt", "ai", "ask", "gpt", "solve"], prefixes=["+", ".", "/", "-", "!", "$", "#", "&"]))
 async def chat_gpt(bot, message):
     try:
         start_time = time.time()
         await bot.send_chat_action(message.chat.id, ChatAction.TYPING)
 
+        # Check if there is a question after the command
         if len(message.command) < 2:
             await message.reply_text("Example:\n\n/chatgpt Where is TajMahal?")
         else:
@@ -25,7 +25,7 @@ async def chat_gpt(bot, message):
                             end_time = time.time()
                             telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
                             await message.reply_text(
-                                f"{answer}      ᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛ @kira_probot",
+                                f"{answer}\n\nᴀɴsᴡᴇʀɪɴɢ ʙʏ ➛ @kira_probot\nResponse Time: {telegram_ping}",
                                 parse_mode=ParseMode.MARKDOWN
                             )
                         else:
