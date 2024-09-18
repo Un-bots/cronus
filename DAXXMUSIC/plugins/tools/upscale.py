@@ -30,7 +30,7 @@ async def upscale_image(client, message):
     if not replied.photo:
         return await message.reply_text("Please Reply To An Image ...")
 
-    aux = await message.reply_text("Please Wait ...")
+    aux = await message.reply_text("Please wait 1 to 2 mins.. and Dont spam.")
     image = await replied.download()
 
     try:
