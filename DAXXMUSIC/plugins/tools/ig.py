@@ -19,7 +19,7 @@ async def insta_download(client, message):
     try:
         response = get(f"https://hoshi-api-f62i.onrender.com/api/insta?url={url}")
         if response.status_code != 200:
-            return await message.reply(f"Error fetching Instagram data. Status code: {response.status_code}\nReport @HoshinoXUpdates")
+            return await message.reply(f"Error fetching Instagram data. Status code: {response.status_code}\nReport it @unb_support")
 
         data = response.json()
         media_list = data.get("result", [])
