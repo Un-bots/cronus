@@ -5,7 +5,6 @@ from pyrogram.types import InputMediaPhoto
 from DAXXMUSIC import app as app
 import asyncio
 
-"
 
 
 @app.on_message(filters.command(["insta","igd"]))
